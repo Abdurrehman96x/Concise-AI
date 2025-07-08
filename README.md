@@ -44,6 +44,8 @@ https://github.com/user-attachments/assets/de20c67a-050e-4267-9169-e3d22e1d809b
 
 Due to **CORS restrictions**, browser extensions can't call Google's Gemini API directly from the frontend.
 
+https://github.com/Abdurrehman96x/gemini-proxy-server
+
 So we use a **Node.js-based proxy server** hosted on [Vercel](https://vercel.com) that:
 
 - Accepts POST requests with raw article text
