@@ -6,20 +6,20 @@
 
 ## 📽️ Live Demo
 
-
+https://github.com/user-attachments/assets/de20c67a-050e-4267-9169-e3d22e1d809b
 
 ---
 
 ## 🖼️ Screenshots
 
 ### 🔹 Extension Popup UI  
-![Popup Screenshot](screenshots/popup-ui.png)
+![Popup Screenshot](https://github.com/Abdurrehman96x/Concise-AI/blob/9a19f426685cad54b3b88ff58ee9bba89e580a92/screenshots/popup-ui.png.png)
 
 ### 🔹 Summary Result  
-![Summary Text](screenshots/summary-result.png)
+![Summary Text](https://github.com/Abdurrehman96x/Concise-AI/blob/9a19f426685cad54b3b88ff58ee9bba89e580a92/screenshots/summary-result.png.png)
 
 ### 🔹 Generated PDF with Logo  
-![PDF Output](screenshots/pdf-output.png)
+![PDF Output](https://github.com/Abdurrehman96x/Concise-AI/blob/9a19f426685cad54b3b88ff58ee9bba89e580a92/screenshots/pdf-output.png.png)
 
 ---
 
