@@ -10,6 +10,8 @@
       --blue-hover: #2563eb;
       --green: #22c55e;
       --green-hover: #16a34a;
+      --orange: #f50b1f;
+      --orange-hover: #d90611;
       --gray: #f3f4f6;
       --dark: #1f2937;
       --text: #111827;
@@ -20,12 +22,15 @@
       font-family: "Segoe UI", sans-serif;
       min-width: 460px;
       max-width: 500px;
-      min-height: 320px;
+      min-height: 340px;
       border-radius: 16px;
       overflow: hidden;
       background: linear-gradient(to bottom right, #e0f2fe, #f0fdf4);
       color: var(--text);
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     h2 {
@@ -51,10 +56,16 @@
       font-size: 14px;
       outline: none;
       transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    select:hover {
+      border-color: var(--blue);
     }
 
     select {
       flex: 1;
+      background-color: white;
     }
 
     button {
@@ -75,10 +86,18 @@
       background-color: var(--green-hover);
     }
 
+    #download-btn {
+      background-color: var(--orange);
+    }
+
+    #download-btn:hover {
+      background-color: var(--orange-hover);
+    }
+
     #result {
       margin-top: 15px;
       padding: 15px;
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.5);
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 16px;
       backdrop-filter: blur(12px);
@@ -114,44 +133,45 @@
       }
     }
 
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
     .footer {
-      margin-top: 15px;
+      margin-top: 16px;
       font-size: 12px;
       text-align: center;
       color: #6b7280;
-      padding: 2px 0 0;
+      padding-top: 4px;
       border-top: 1px solid var(--border);
     }
   </style>
+
+  <!-- ✅ Load jsPDF properly -->
+  <script src="js/jspdf.umd.min.js"></script>
 </head>
 
 <body>
   <h2>🧠 Concise AI Summary</h2>
 
   <div class="options">
-    <select id="summary-type">
+    <select id="summary-type" aria-label="Choose summary type">
       <option value="brief">Brief Summary</option>
       <option value="detailed">Detailed Summary</option>
       <option value="bullets">Bullet Points</option>
     </select>
-    <button id="summarize">Summarize</button>
-    <button id="copy-btn">Copy</button>
+    <button id="summarize" aria-label="Summarize article">Summarize</button>
+    <button id="copy-btn" aria-label="Copy summary to clipboard">Copy</button>
+    <button id="download-btn" aria-label="Download summary as PDF">Download PDF</button>
   </div>
 
   <div id="result">
     Select a summary type and click 'Summarize' to generate the article summary.
   </div>
 
-  <script src="popup.js"></script>
+  <div class="footer">
+    © 2025 Abdur Rehman Malik
+  </div>
+
+  <script src="popup.js" defer></script>
+  <script>
+  </script>
 </body>
-<footer class="footer">
-  © 2025 Abdur Rehman Malik
-</footer>
 
 </html>
