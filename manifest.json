@@ -14,7 +14,7 @@
     }
   ],
   "host_permissions": ["<all_urls>"],
-  "privacy_policy": "privacy.html",
+  "privacy_policy": "index.html",
   "web_accessible_resources": [
     {
       "resources": ["logo_on_pdf.png"],
